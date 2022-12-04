@@ -22,7 +22,6 @@
  */
 // ------------------------------------------------------------------- INCLUDES
 
-#include "board.h"
 #include "log.h"
 #include "angle.h"
 
