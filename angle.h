@@ -35,11 +35,6 @@
 #ifndef ANGLE_H
 #define ANGLE_H
 
-#include "drv_digital_out.h"
-#include "drv_digital_in.h"
-#include "drv_i2c_master.h"
-
-
 // -------------------------------------------------------------- PUBLIC MACROS 
 /**
  * \defgroup macros Macros
