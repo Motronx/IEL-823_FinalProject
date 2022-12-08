@@ -1,15 +1,9 @@
-// ----------------------------------------------------------------------------
+
 extern "C"{
 #ifndef ANGLE_H
 #define ANGLE_H
-
-// -------------------------------------------------------------- PUBLIC MACROS 
-
-//#define ANGLE_RETVAL  uint8_t
-
 #define ANGLE_OK           0x00
 #define ANGLE_INIT_ERROR   0xFF
-/** \} */
 
 /**
  * \defgroup error_register_status Error register status
@@ -53,8 +47,8 @@ extern "C"{
 #define ANGLE_CXE_0                       0x0000 << 8
 #define ANGLE_CXE_1                       0x0001 << 8
 
- #define ANGLE_CER_0                      0x0000 << 7
- #define ANGLE_CER_1                      0x0001 << 7
+#define ANGLE_CER_0                      0x0000 << 7
+#define ANGLE_CER_1                      0x0001 << 7
 /** \} */
 
 /** \} */ // End group macro 
@@ -63,14 +57,6 @@ extern "C"{
 typedef struct
 {
  
-    // Modules 
-
-  //  i2c_master_t i2c;
-
-    // ctx variable 
-
-  //  uint8_t slave_address;
-
 } angle_t;
 
 /**
@@ -78,38 +64,23 @@ typedef struct
  */
 typedef struct
 {
-    // Communication gpio pins 
 
 
 } angle_cfg_t;
 
-/** \} */ // End types group
- 
 #ifdef __cplusplus
-
 #endif
 
 
 void angle_cfg_setup ( angle_cfg_t *cfg );
 
-
-
 int angle_get_angle ( angle_t *ctx );
-
 
 int angle_get_temperature ( angle_t *ctx );
 
-
 int angle_get_magnetics ( angle_t *ctx );
 }
-
-
 #ifdef __cplusplus
-
 #endif
-#endif  // _ANGLE_H_
+#endif
 
-/** \} */ // End public_function group
-/// \}    // End click Driver group  
-/*! @} */
-// ------------------------------------------------------------------------- END
